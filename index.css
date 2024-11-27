@@ -1,0 +1,216 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#body{
+  font-family: "EB Garamond", serif;
+  font-weight: 100px;
+  font-style: normal; 
+  height:100%;
+  width:100%;
+  background-color: aquamarine;
+}
+
+#logged-out-view{
+    box-sizing:border-box;
+    height:100%;
+    display:flex;
+    justify-content:center;
+}
+.con{
+    width:400px;
+    gap:3em;
+    background-color:red;
+}
+.provider-buttons{
+    margin-bottom:15px;
+    width:100%;
+}
+.con h1{
+    margin-bottom:40px;
+    margin-top:40px;
+}
+input,.con button{
+    outline:none;
+    border-radius:15px;
+    border:0;
+    background-color:white
+}
+
+.container2 {
+    margin-top: 50px;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+}
+.container2 h1 {
+    font-size: 2.5rem;
+    color: #198754;
+}
+.container2 button {
+    margin-top: 20px;
+    background-color: #198754;
+    color: white;
+}
+.container2 button:hover {
+    background-color: #157347;
+}
+.container3 h1{
+margin-bottom:10px;
+}
+#greet{
+    display:inline-block;
+    color:pink;
+    margin-bottom:20px;
+}
+#h{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+} 
+
+:root {
+    --border-width: 3px;
+    --element-border-radius: 5px;
+    --button-height: 5px;
+    --small-button-height: 2px;
+    --element-padding: 0.8em;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    
+}
+h1 {
+    margin: 0;
+}
+
+.app-title {
+
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* === Sections === */
+
+.auth-fields-and-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+
+#email-input,#password-input,#sign-in-btn,#create-account-btn{
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .25);   
+}
+#email-input:hover{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .25); 
+    border:1px solid green
+}
+#password-input:hover{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .25); 
+    border:1px solid green
+}
+
+/* === Structure === */
+
+.pro-log{
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
+
+#profile-img{
+    border-radius:50%;
+    height:50px;
+    width:50px;
+}
+/* === Common for elements === */
+
+input, button {
+    font-family: inherit;
+    padding: var(--element-padding);
+    box-sizing: border-box;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+/* === Input fields === */
+
+input {
+    font-weight: 300;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+   
+    opacity: 1; /* Firefox */
+}
+
+/* === Buttons === */
+
+button {
+    font-weight: 600;
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.provider-btn {
+    align-items: center;
+    gap: 0.5em;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .25);
+}
+
+.provider-btn:hover {
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .25);
+}
+
+.google-btn-logo {
+    width: 1.375em;
+}
+
+/* === IDs === */
+
+
+#logged-in-view {
+    display: none;
+}
+
+
+.icon-btn {
+
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 1.875em;
+}
+
+
+.icon-img-btn{
+    width:30px;
+    height:20px;
+}
+#logged-in-view{
+    display:flex;
+    justify-content:center;
+}
+
+#sign-in-btn,#create-account-btn{
+    border-radius:0px;
+    border:6px solid rgb(16, 170, 134);
+    color:#198754;
+    font-weight:600px;
+}
