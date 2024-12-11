@@ -42,6 +42,7 @@ def preprocess_image(image_path):
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
     return img_array
 
+
 @app.route('/', methods=['GET', 'POST'])
 def upload_predict():
     if request.method == 'POST':
@@ -86,6 +87,7 @@ def upload_predict():
 
     # If the method is GET, just render the initial form page
     return render_template('index.html')
+
 
 # Start the Flask app
 if __name__ == '__main__':
